@@ -1,0 +1,31 @@
+.bestUsers {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+
+  .user__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    border: 1px solid black;
+  }
+}
+
+.table {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+  margin-top: 100px;
+}
+
+img {
+  width: 200px;
+  height: 300px;
+  object-fit: cover;
+}
