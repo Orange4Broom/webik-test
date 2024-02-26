@@ -3,13 +3,7 @@ import { useAuthContext } from "../../hooks/useAuthContext";
 import { useFetchFirestore } from "../../hooks/useFetchFirestore";
 import { User } from "../../typings/user";
 import { Icon } from "../icon/Icon";
-import {
-  collection,
-  deleteDoc,
-  doc,
-  setDoc,
-  updateDoc,
-} from "firebase/firestore";
+import { collection, deleteDoc, doc, setDoc } from "firebase/firestore";
 import { projectFirestore } from "../../firebase/config";
 import { v4 as uuidv4 } from "uuid";
 import { useToastify } from "../../hooks/useToastify";
