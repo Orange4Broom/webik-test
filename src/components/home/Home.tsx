@@ -62,29 +62,29 @@ export const Home = () => {
       });
   };
 
-  const handleEditUser = (id: string) => {
-    const userId = id;
-    const userRef = doc(collection(projectFirestore, "kino"), userId);
+  // const handleEditUser = (id: string) => {
+  //   const userId = id;
+  //   const userRef = doc(collection(projectFirestore, "kino"), userId);
 
-    const updatedUser = {
-      firstname: firstname,
-      lastname: lastname,
-      phone: phone,
-      email: email,
-      nation: nation,
-      role: "user",
-    };
+  //   const updatedUser = {
+  //     firstname: firstname,
+  //     lastname: lastname,
+  //     phone: phone,
+  //     email: email,
+  //     nation: nation,
+  //     role: "user",
+  //   };
 
-    updateDoc(userRef, updatedUser)
-      .then(() => {
-        console.log("success", "Uživatel byl úspěšně upraven");
-        window.location.reload();
-      })
-      .catch((error) => {
-        console.log("error", "Film se nepodařilo upravit");
-        console.error("Error adding film:", error);
-      });
-  };
+  //   updateDoc(userRef, updatedUser)
+  //     .then(() => {
+  //       console.log("success", "Uživatel byl úspěšně upraven");
+  //       window.location.reload();
+  //     })
+  //     .catch((error) => {
+  //       console.log("error", "Film se nepodařilo upravit");
+  //       console.error("Error adding film:", error);
+  //     });
+  // };
 
   const deleteUser = async (id: string) => {
     const userId = id;
