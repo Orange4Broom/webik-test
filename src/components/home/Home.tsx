@@ -148,6 +148,10 @@ export const Home = () => {
         </form>
       ) : null}
 
+      <p>Přihlašovací údaje:</p>
+      <p>email: admin@admin.com</p>
+      <p>heslo: heslo1234</p>
+
       <table className="table">
         <thead>
           <tr>
